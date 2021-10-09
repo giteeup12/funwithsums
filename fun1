@@ -1,0 +1,26 @@
+// You can edit this code!
+// Click here and start 
+
+
+package main
+import "fmt"
+
+func noloopp (x float64) float64 {
+	z := x/2
+	y := z - 1
+	y = y * x
+	y = y + z
+	y = y + x 
+	title := "\n from noloopp: the sum of numbers 1 to %3.0f  is %.0f "
+    fmt.Printf(title, x,  y)
+	return y
+   }
+
+
+func main() {
+noloopp(10)
+noloopp(100)
+for x := 1.0; x < 101.00; x++ {
+	noloopp(x)
+}
+}
